@@ -136,7 +136,7 @@ def main():
         internshala_search_url = f"https://internshala.com/internships/{quote(category_name)}-internship"
         indeed_search_url = f"https://www.indeed.com/jobs?q={quote(category_name)}"
         naukri_search_url = f"https://www.naukri.com/{quote(category_name)}-jobs"
-        st.markdown("<h6 class='hey'>Tap below for latest Jobs and Internships on:</h6>", unsafe_allow_html=True)
+        st.markdown(f"<h6 class='hey'>Tap below for latest Jobs and Internships on {category_name}:</h6>", unsafe_allow_html=True)
         st.markdown(f"""
                     <div class="buttons">
                         <a class="button-link" href="{linkedin_search_url}" target="_blank">LinkedIn</a>
